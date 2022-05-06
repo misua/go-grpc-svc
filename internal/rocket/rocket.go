@@ -1,3 +1,5 @@
+//go:generate mockgen -destination=rocket_mocks_test.go -package=rocket github.com/misua/go-grpc-svc/internal/rocket Store
+
 package rocket
 
 import "context"
@@ -14,7 +16,7 @@ type Rocket struct {
 // our database implementation to follow
 type Store interface {
 	GetRocketByID(id string) (Rocket, error)
-	InsertRocket(rkt Rocket) (Rocket error)
+	InsertRocket(rkt Rocket) (Rocket, error)
 	DeleteRocket(id string) error
 }
 
