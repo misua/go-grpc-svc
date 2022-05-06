@@ -3,7 +3,7 @@ package main
 import "log"
 
 func Run() error {
-	// responsible for initializing and starting grpc
+	//TODO responsible for initializing and starting grpc
 	return nil
 }
 
