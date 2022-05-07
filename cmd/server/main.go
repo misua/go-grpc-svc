@@ -14,6 +14,12 @@ func Run() error {
 		return err
 	}
 
+	err = rocketStore.Migrate()
+	if err != nil {
+		log.Println("failed to run migrations")
+		return err
+	}
+
 	_ = rocket.New(rocketStore)
 	return nil
 }
