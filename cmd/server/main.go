@@ -5,6 +5,7 @@ import (
 
 	"github.com/misua/go-grpc-svc/internal/db"
 	"github.com/misua/go-grpc-svc/internal/rocket"
+	"github.com/misua/go-grpc-svc/internal/transport/grpc"
 )
 
 func Run() error {
@@ -20,7 +21,12 @@ func Run() error {
 		return err
 	}
 
-	_ = rocket.New(rocketStore)
+	rktService := rocket.New(rocketStore)
+	rktHandler := grpc.New(rktService)
+
+	if err := rktHandler.Serve(); err != nil {
+		return err
+	}
 	return nil
 }
 

@@ -8,10 +8,12 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun May 08 14:14:48 2022
+# Make data base, printed on Sun May 08 19:14:07 2022
 
 # Variables
 
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
 SYSTEMDRIVE = C:
 # environment
@@ -23,7 +25,7 @@ VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
 # environment
 LOCALAPPDATA = C:\Users\Administrator\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-966a7b98-c81d-4c7f-87ba-cfae036e0a94-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-3b27988c-61f9-487e-9706-4d2799d60094-sock
 # environment
 VSCODE_CWD = C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -41,7 +43,9 @@ GOPATH = C:\Users\Administrator\go
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_2928_PPJSYFVUSTSDGMUZ
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_4436_QUSEQXUWERHGDFXP
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -93,7 +97,7 @@ MAKEFILE_LIST := makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 2928
+VSCODE_PID = 4436
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -207,7 +211,7 @@ PROCESSOR_REVISION = 1801
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD
 # variable set hash-table stats:
-# Load=97/1024=9%, Rehash=0, Collisions=8/124=6%
+# Load=99/1024=10%, Rehash=0, Collisions=9/126=7%
 
 # Pattern-specific Variable Values
 
@@ -235,8 +239,7 @@ PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD
 all:
 #  Command line target.
 #  Implicit rule search has been done.
-#  File does not exi 
-st.
+#  File does not exist.
 #  File has not been updated.
 
 build:
@@ -257,8 +260,7 @@ makefile:
 # Load=5/1024=0%, Rehash=0, Collisions=0/15=0%
 # VPATH Search Paths
 
-# No 'vpath'  
-search paths.
+# No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
@@ -268,6 +270,6 @@ search paths.
 # strcache performance: lookups = 23 / hit rate = 21%
 # hash-table stats:
 # Load=18/8192=0%, Rehash=0, Collisions=0/23=0%
-# Finished Make data base on Sun May 08 14:14:48 2022
+# Finished Make data base on Sun May 08 19:14:07 2022
 
  
