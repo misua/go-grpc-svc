@@ -1,0 +1,4 @@
+make: Entering directory 'c:/Users/Administrator/Desktop/go/go-grpc-svc'
+protoc --go_out=plugins=grpc:. rocket/**/*.proto
+make: Leaving directory 'c:/Users/Administrator/Desktop/go/go-grpc-svc'
+ 
